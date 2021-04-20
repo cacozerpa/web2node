@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="../src/register.css">
+
+<title>Register</title>
+
+</head>
+<body>
+	<section class="registerForm">
+		<form action="/register" method="POST">
+			<h4>Create an Account</h4>
+
+			<input class="inputs" type="text" name="name" id="name"
+				placeholder="Your Complete Name"> 
+			<input class="inputs"
+				type="text" name="username" id="username" placeholder="Username">
+			<input class="inputs" type="email" name="email" id="email"
+				placeholder="example@gmail.com"> 
+			<input class="inputs"
+				type="text" name="ConfEmail" id="ConfEmail"
+				placeholder="Confirm your Email"> 
+			<input class="inputs"
+				type="password" name="password" id="password"
+				placeholder="Password">
+			<input class="inputs"
+				type="password" name="ConfPass" id="ConfPass"
+				placeholder="Confirm your Password"> 
+			<button class="button" id="Register" value="Register">Register</button>
+			<p>
+				<a href="/Singin"> Sing In</a>
+			</p>
+
+		</form>
+	</section>
+	
+</body>
+</html>

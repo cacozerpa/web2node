@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Profile</title>
+<link rel="stylesheet" href="../src/user.css">
+
+</head>
+<body>
+	
+	<section class="Profile">
+		
+			<h4>Your Profile</h4>
+			
+			<p>Name:</p>
+			<input class="inputs" type="text" value="<%= name %>" disabled />	
+			<p>Username:</p>
+			<input class="inputs" type="text" value="<%= username %>" disabled />	
+			<p>Email:</p>
+			<input class="inputs" type="email" value="<%= email %>" name="email" id = "email"/>	
+			<p>Password:</p>
+			<input class="inputs" type="password" value="<%= password %>" disabled />		
+			
+			<a href="/deleteUser/<%= username %>">Delete</a>
+			<a href="/update/<%= username %>">Update Email</a>
+			
+
+	</section>
+</body>
+</html>

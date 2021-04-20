@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(./image.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+}
+
+.Profile {
+	width: 400px;
+	background: orange;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family: Century gothic;
+	color: black;
+	box-shadow: 7px 13px 37px #000;
+}
+.inputs {
+	width: 100%;
+	background: orange;
+	padding: 10px;
+	margin-bottom: 16px;
+	border: none;
+	font-family: Century gothic;
+	font-size: 18px;
+	color: rgb(34, 34, 34);
+}
+
+.Profile p{
+	font-size: 20px;
+	font-family: Century gothic;
+	color: black;
+}
+
+.Profile h4 {
+	font-size:40px;
+	margin-bottom: 20px;
+}
+
+.Profile a {
+	width: 100%;
+	background: black;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+	text-decoration: none;
+	margin-left: 40px;
+	
+}

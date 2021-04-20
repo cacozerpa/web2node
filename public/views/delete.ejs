@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete</title>
+<link rel="stylesheet" href="../src/delete.css">
+</head>
+<body>
+
+<form id='deleteForm' action="/deleteUser/:username" method="POST">
+	<div class= "delete-box">
+	
+	<h1> Singin to Delete your user </h1>
+		<div class = "textbox">
+			<input type = "text" placeholder = "username" name = "username" id="username">
+		</div>
+		<div class = "textbox">
+			<input type = "password" placeholder = "password" name = "password" id="password">
+		</div>
+			<button class="btn" id="Delete">Delete</button>
+	
+		</div>
+	</form>
+</body>
+</html>

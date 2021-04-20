@@ -1,0 +1,28 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../src/userproduct.css">
+    <title>Product List</title>
+</head>
+
+<body>
+
+    <div class="products products-table">
+        <% for(var i = 0; i < data.length; i++) { %>
+        <div class="product">
+            <div class="product-content">
+                <h3>
+                    <%= data[i].name %>
+                    <small><%= data[i].username %></small>
+                </h3>
+                <p class="product-text price"><%= data[i].price %></p>
+                <p class="product-text genre"><%= data[i].description %></p>
+            </div>
+        </div>
+        
+        <a href="/updateprod ">Edit</a>
+        <% } %>
+    </div>
+</body>
+</html>

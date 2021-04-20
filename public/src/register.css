@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(./image.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+}
+
+.registerForm {
+	width: 400px;
+	background: orange;
+	padding: 30px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 4px;
+	font-family: Century gothic;
+	color: black;
+	box-shadow: 7px 13px 37px #000;
+}
+
+.registerForm h4 {
+	font-size:40px;
+	margin-bottom: 20px;
+}
+
+.inputs {
+	width: 100%;
+	background: white;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid black;
+	font-family: Century gothic;
+	font-size: 18px;
+	color: black;
+}
+
+.registerForm p {
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.registerForm a {
+	color: black;
+	text-decoration: none;
+}
+
+.registerForm a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.button {
+	width: 100%;
+	background: black;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+}

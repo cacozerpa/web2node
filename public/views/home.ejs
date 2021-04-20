@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="../src/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha512-9BwLAVqqt6oFdXohPLuNHxhx36BVj5uGSGmizkmGkgl3uMSgNalKc/smum+GJU/TTP0jy0+ruwC3xNAk3F759A==" crossorigin="anonymous" />
+<title>Home</title>
+
+</head>
+<body>
+	<input type="checkbox" id="check">
+	<header>
+		<label for="check"><i class="fas fa-bars" id="sidebarbtn"></i></label>
+		<div class="left">
+			<h3>TuCompra.com 
+			</h3>
+		</div>
+		
+		<div class="right">
+			<a href="/" class="logout">Logout</a>
+		</div>
+		
+	</header>
+
+	<div class="sidebar">
+		<center>
+			<h4>Bienvenido <%= username %> </h4>
+		</center>
+		<a href="/user/<%= username %>" ><i class="far fa-address-card"></i><span>Your Profile</span></a>	
+		<a href="/userproduct/<%= username %>"><i class="fab fa-product-hunt"></i><span>Your Products</span></a>
+		<a href="/product"><i class="fas fa-plus-circle"></i><span>Create Product</span></a>
+	</div>
+
+	<div class="content">
+
+		
+			<div class="product">
+				<div class="product-content">
+					<h3>
+						name
+						<small>username</small>
+					</h3>
+					<p class="product-text price">price</p>
+					<p class="product-text genre">description</p>
+				</div>
+			</div>
+		 
+		</div>
+			
+		</div>
+	
+</body>
+</html>

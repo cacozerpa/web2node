@@ -1,0 +1,95 @@
+
+  *{
+      margin: 0;
+      padding: 0;
+      font-family: Century gothic;
+      box-sizing: border-box;
+      color: black;
+  }
+
+  body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(./image.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+
+  .contact-info{
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      color: black;
+  }
+
+  .card{
+      background: white;
+      padding: 0 20px;
+      margin: 0 20px;
+      width: calc(33% - 20px);
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      cursor: pointer;
+  }
+
+  .card-icon{
+      font-size: 28px;
+      background: orange;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      line-height: 60px !important;
+      border-radius: 50%;
+      transition: 0.3s linear;
+  }
+
+  .card:hover .card-icon{
+      background: white;
+      transform: scale(1.6);
+  }
+
+  .card p{
+      margin-top: 20px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      max-height: 0;
+      opacity: 0;
+      transition: 0.3s linear;
+      color: black;
+  }
+
+  .card:hover p{
+      max-height: 40px;
+      opacity: 1;
+      color: black;
+
+  }
+
+  .about-section {
+    margin-left: 40px;
+    padding: 50px;
+    text-align: center;
+    background-color: orange;
+    color: black;
+  }
+
+  @media screen and (max-width: 800px) {
+    .contact-info {
+      flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+  }
