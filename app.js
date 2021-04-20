@@ -2,6 +2,11 @@ const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes/routes');
 const views = require('./routes/views');
+const dotenv = require('dotenv');
+
+//import env variables
+
+dotenv.config('./varibales.env')
 
 //express app
 const app = express();
