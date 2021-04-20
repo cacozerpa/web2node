@@ -14,7 +14,8 @@ app.set('views','public/views');
 app.use(express.static('./public'));
 
 //server creation
-app.listen(3000);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT);
 console.log('server started!');
 
 //db connection
