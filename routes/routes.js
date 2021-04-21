@@ -5,7 +5,7 @@ const urlencodedParser = express.urlencoded({extended:false});
 
 const {register, Singin} = require('../controller/authcontroller');
 const {user, deleteUser, updateUser} = require('../controller/usercontroller');
-const {create, getuserProduct, products} = require('../controller/prodcontroller');
+const {create, getuserProduct} = require('../controller/prodcontroller');
 
 //user
 router.route('/register').post(urlencodedParser, register);

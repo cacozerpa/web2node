@@ -12,6 +12,7 @@
 		
 			<h4>Your Profile</h4>
 			
+				<form action="/update/<%= username %>" method="GET">
 			<p>Name:</p>
 			<input class="inputs" type="text" value="<%= name %>" disabled />	
 			<p>Username:</p>
@@ -22,8 +23,8 @@
 			<input class="inputs" type="password" value="<%= password %>" disabled />		
 			
 			<a href="/deleteUser/<%= username %>">Delete</a>
-			<a href="/update/<%= username %>">Update Email</a>
-			
+			<button class="button" id="Update" value="Update">Update</button>
+			</form>
 
 	</section>
 </body>

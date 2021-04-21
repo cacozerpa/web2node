@@ -34,10 +34,12 @@ const deleteUser = async (req, res) => {
 const updateUser = async (req, res) => {
 
     
-    await User.updateOne({username:req.params.username}, {email: req.body.email});
+    await User.updateOne({username:req.params.username}, {email: req.query.email});
     res.redirect('/')
     res.status(200);
     console.log('Updated')
+    console.log(req.query);
+
 }
 
 module.exports = {
