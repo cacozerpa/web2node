@@ -33,9 +33,9 @@ const deleteUser = async (req, res) => {
 
 const updateUser = async (req, res) => {
 
-    
     await User.updateOne({username:req.params.username}, {email: req.query.email});
     res.redirect('/')
+    window.alert('User Updated!');
     res.status(200);
     console.log('Updated')
     console.log(req.query);
