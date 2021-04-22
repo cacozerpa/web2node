@@ -31,9 +31,21 @@ const getuserProduct = (req, res) =>{
 }
 
 const getProduct = (req, res) => {
+ 
+    Prod.findOne({name: req.params.name}), function (err, data){
+        if (err){
+            res.status(400).send('ERORR!');
+        }else{
+            res.status(200);
 
-    Prod.findOne({name : req.params.name}), function (err, data){
-
+            res.render('updateproduct' , {
+                name: data.name,
+                username: data.username,
+                price: data.price,
+                description: data.description
+            });
+            console.log('Este es el prod:' + data)
+        }
     }
 }
 

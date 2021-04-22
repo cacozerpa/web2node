@@ -5,7 +5,7 @@ const urlencodedParser = express.urlencoded({extended:false});
 
 const {register, Singin} = require('../controller/authcontroller');
 const {user, deleteUser, updateUser} = require('../controller/usercontroller');
-const {create, getuserProduct} = require('../controller/prodcontroller');
+const {create, getuserProduct, getProduct} = require('../controller/prodcontroller');
 
 //user
 router.route('/register').post(urlencodedParser, register);
@@ -16,8 +16,7 @@ router.route('/deleteUser/:username').get(deleteUser);
 
 //product 
 router.route('/create').post(urlencodedParser, create);
-router.route('/userproduct/:username').get(urlencodedParser, getuserProduct);4
-//router.route('/home').get(urlencodedParser, products);
-
+router.route('/userproduct/:username').get(urlencodedParser, getuserProduct);
+//router.route('/updateprod/:name').get(urlencodedParser, getProduct);
 
 module.exports = router;
